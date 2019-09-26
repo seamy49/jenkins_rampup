@@ -11,6 +11,11 @@ pipeline {
                 echo 'Building binaries' 
             }
         }
+        stage('Package') {
+            steps {
+                echo 'packaging tarball'
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying to SIT' 
